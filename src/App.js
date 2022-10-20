@@ -1,21 +1,22 @@
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Navigation from "./routes/navigation/navigation.component";
+import Home from "./routes/home/home.component";
+
 import "./index.scss";
 function App() {
   return (
-    <div className="body-container">
-      <div className="nav-container">
-        <div className="nav-item logo">GUIZOUL</div>
-        <ul className="nav-item nav-bar-container">
-          <li className="nav-bar-item">Home</li>
-          <li className="nav-bar-item">Projects</li>
-          <li className="nav-bar-item">Education</li>
-          <li className="nav-bar-item">Experience</li>
-          <li className="nav-bar-item">Blog</li>
-        </ul>
-        <div className="nav-item">
-          <button className="nav-btn">Contact Me</button>
-        </div>
-      </div>
-      <div className="main-container">
+    <Fragment>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          {/*<Route path="/shop/*" element={<Shop />} />
+          <Route path="/auth" element={<Authentication />} />
+          <Route path="/checkout" element={<Checkout />} /> */}
+        </Route>
+      </Routes>
+      {/* <div className="main-container">
         <section className="hero-section">
           <div className="image-side">
             <img src={require("./template.png")} alt="that's me" />
@@ -26,13 +27,13 @@ function App() {
               <span>I am </span> <span className="name">ABDELLAH</span> GUIZOUL
             </h2>
             <h1 className="info-side-title--tertiary ">
-              Enjoy your tour in my portfolio
+              A software engineering student
             </h1>
           </div>
         </section>
-      </div>
-      <div className="footer-container"></div>
-    </div>
+      </div> */}
+      {/* <div className="footer-container"></div> */}
+    </Fragment>
   );
 }
 
