@@ -21,8 +21,9 @@ body {
   line-height: 1.6;
   font-weight: 300;
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: #7b2cbf;
   padding: 3rem;
+  padding-bottom: 0;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,14 +43,15 @@ code {
 }
 
 .nav-container {
-  padding: 10px 40px;
+  padding: 1rem 4rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
 
   .logo {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-weight: normal;
     background-color: #7b2cbf;
     color: #fff;
@@ -82,19 +84,25 @@ code {
         width: 0px;
         height: 0.1rem;
         display: block;
-        background: #5c1699;
+        background: #9a2ff8;
         transition: 300ms;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
       }
 
-      &:hover::after {
-        width: 100%;
+      &:hover {
+        color: #9a2ff8;
+        box-shadow: 0 5px 7px -3px #9a2ff898;
+
+        &:after {
+          width: 100%;
+        }
       }
     }
   }
 
+  .logo,
   .nav-btn {
     min-width: 165px;
     width: auto;
@@ -132,7 +140,7 @@ code {
       left: 0;
       width: 0%;
       height: 100%;
-      background-color: #5c1699;
+      background-color: #9a2ff8;
       transition: all 0.3s;
       z-index: -1;
     }
@@ -140,6 +148,68 @@ code {
       color: #fff;
       &:before {
         width: 100%;
+      }
+    }
+  }
+}
+
+.main-container {
+  padding: 4rem 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-content: space-around;
+
+    .image-side img {
+      height: 81vh;
+      border: solid 0.5rem #7b2cbf;
+    }
+
+    .info-side {
+      height: 81vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      border: solid 0.5rem #7b2cbf;
+
+      .info-side-title {
+        font-size: 5.3rem;
+        letter-spacing: 0.7rem;
+        font-weight: bold;
+      }
+
+      .info-side-title--secondary {
+        font-size: 4.2rem;
+        font-weight: normal;
+        display: flex;
+        gap: 2rem;
+        letter-spacing: 0.2rem;
+        flex-wrap: wrap;
+
+        .name {
+          padding: 0.2rem 0.6rem;
+          font-size: 3.6rem;
+          color: #fff;
+          background: #7b2cbf;
+          box-shadow: 0 0 10px #7b2cbf, 0 0 20px #7b2cbf, 0 0 30px #7b2cbf;
+          border-radius: 0.3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .info-side-title--tertiary {
+        font-size: 2.8rem;
+        font-weight: normal;
+        letter-spacing: 0.4rem;
       }
     }
   }
