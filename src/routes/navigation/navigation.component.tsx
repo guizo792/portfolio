@@ -17,8 +17,9 @@ const Navigation = () => {
         <LogoContainer to="/">GUIZOUL</LogoContainer>
         <NavLinksContainer>
           <NavLinkContainer to="/">Home</NavLinkContainer>
-          <NavLinkContainer to="/">Projects</NavLinkContainer>
+          <NavLinkContainer to="/">About</NavLinkContainer>
           <NavLinkContainer to="/">Education</NavLinkContainer>
+          <NavLinkContainer to="/">Projects</NavLinkContainer>
           <NavLinkContainer to="/">Experience</NavLinkContainer>
           <NavLinkContainer to="/">Blog</NavLinkContainer>
         </NavLinksContainer>

@@ -19,6 +19,7 @@ export const BaseButton = styled.button`
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 2px;
 
   &:after {
     content: "";

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavigationContainer = styled.div`
-  padding: 1rem 4rem 3rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,7 @@ export const LogoContainer = styled(Link)`
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 2px;
 
   &:after {
     content: "";
@@ -75,7 +76,6 @@ export const NavLinksContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  color: #5c1699;
   list-style: none;
 `;
 
@@ -84,6 +84,7 @@ export const NavLinkContainer = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   letter-spacing: 0.5px;
+  color: #641aa5;
 
   // position: absolute;
 

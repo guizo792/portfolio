@@ -15,6 +15,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
   font-weight: 300;
   font-family: "Lato", sans-serif;
   color: #7b2cbf;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 0;
   min-height: 100vh;
   display: -webkit-box;
@@ -35,9 +36,68 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
+  background: url("../public//images/crystal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#root {
+  padding: 1rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.205);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.gotop-btn {
+  position: fixed;
+  bottom: 1.9rem;
+  right: 4rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9a2ff8;
+    z-index: -2;
+    border-radius: 2px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #7b2cbf;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover::before {
+    width: 100%;
+  }
 }

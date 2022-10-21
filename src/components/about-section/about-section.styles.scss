@@ -1,0 +1,42 @@
+.about-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  background-color: #3c096c;
+  backdrop-filter: blur(15px);
+
+  .about-section-title {
+    font-size: 4.8rem;
+    font-weight: normal;
+    letter-spacing: 1.6rem;
+  }
+
+  .about-section-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .about-section-item:first-child {
+      font-size: 2.8rem !important;
+    }
+
+    .about-section-item {
+      font-size: 2.4rem;
+    }
+  }
+
+  .about-section-btn {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      gap: 4rem;
+    }
+  }
+}
