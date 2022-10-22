@@ -7,5 +7,5 @@ export const MainContainer = styled.div`
   // align-items: center;
 
   display: grid;
-  grid-template-rows: 1fr 1.25fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 `;

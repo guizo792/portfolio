@@ -5,6 +5,7 @@ import {
   InfoSideTitle,
   InfoSideTitleSecondary,
   InfoSideTitleTertiary,
+  Slogan,
 } from "./hero-section.styles";
 
 const HeroSection = () => {
@@ -22,6 +23,7 @@ const HeroSection = () => {
           A future software engineer
         </InfoSideTitleTertiary>
       </InfoSideContainer>
+      <Slogan>Enjoy your tour in my portfolio</Slogan>
     </HeroSectionContainer>
   );
 };

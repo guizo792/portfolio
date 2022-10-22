@@ -8,7 +8,7 @@ type EducationDetails = {
 
 const educationDetails: EducationDetails[] = [
   {
-    year: "Currently",
+    year: "now",
     schoolName: "Hassan II high school",
     description:
       "I took the baccalaureate in the science maths A sector in the Hassan II high school ",
@@ -32,12 +32,15 @@ const educationDetails: EducationDetails[] = [
 const EducationSection = () => {
   return (
     <div className="education-section-container">
+      <h1 className="section-title education-section-title">Education</h1>
       {educationDetails.map((education) => (
         <div className="education-item-container" id={education.year}>
-          <div className="year-label">{education.year}</div>
-          <div className="details-side">
-            <p className="school-name-label">{education.schoolName}</p>
-            <p className="description">{education.description}</p>
+          <div className="education-item-insider-container">
+            <div className="year-label">{education.year}</div>
+            <div className="details-side">
+              <p className="school-name">{education.schoolName}</p>
+              <p className="description">{education.description}</p>
+            </div>
           </div>
         </div>
       ))}
