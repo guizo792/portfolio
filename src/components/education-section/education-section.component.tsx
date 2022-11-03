@@ -9,16 +9,16 @@ type EducationDetails = {
 const educationDetails: EducationDetails[] = [
   {
     year: "now",
-    schoolName: "Hassan II high school",
+    schoolName: "National institute of posts and telecommunications",
     description:
-      "I took the baccalaureate in the science maths A sector in the Hassan II high school ",
+      "Currently I am studying in my 2nd year of software engineering at INPT Rabat",
   },
 
   {
     year: "2021",
-    schoolName: "Hassan II high school",
+    schoolName: "CPGE Bab Sahra",
     description:
-      "I took the baccalaureate in the science maths A sector in the Hassan II high school ",
+      "I studied at classes preparatoires branch of Physics and engineer scinences two years",
   },
 
   {
