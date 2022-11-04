@@ -1,25 +1,24 @@
-import { useNavigate } from "react-router-dom";
-
-import {
-  BackgroundImage,
-  Body,
-  ProjectSectionItemContainer,
-} from "./projects-section-item.styles";
+// import {
+//   BackgroundImage,
+//   Title,
+//   Description,
+//   ProjectSectionItemContainer,
+// } from "./projects-section-item.styles";
+import "./projects-section-item.styles.scss";
 
 const ProjectsSectionItem = ({ project }) => {
-  const { imageUrl, title, route, description, links } = project;
-  const navigate = useNavigate();
+  const { imageUrl, title, description, links } = project;
 
-  const onNavigateHandler = () => navigate(route);
   return (
-    <ProjectSectionItemContainer onClick={onNavigateHandler}>
-      <BackgroundImage imageUrl={imageUrl} />
-      <Body>
+    <div className="projects-section-item-container">
+      <img src={imageUrl} alt={title + " image"} />
+      <div className="title">
         <h2>{title}</h2>
+      </div>
+      <div className="description">
         <p>{description}</p>
-        <p>Check Now</p>
-      </Body>
-    </ProjectSectionItemContainer>
+      </div>
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import AboutSection from "../about-section/about-section.component";
 import EducationSection from "../education-section/education-section.component";
 
 import { MainContainer } from "./main-section.styles";
+import ProjectsSection from "../projects-section/projects-section.component";
 
 export const MainSection = () => {
   return (
@@ -13,6 +14,7 @@ export const MainSection = () => {
         <HeroSection />
         <AboutSection />
         <EducationSection />
+        <ProjectsSection />
       </MainContainer>
     </Fragment>
   );

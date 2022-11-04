@@ -1,7 +1,7 @@
 import { Key } from "react";
 import ProjectsSectionItem from "../projects-section-item/projects-section-item.component";
 
-import "./directory.styles.scss";
+import "./projects-section.styles.scss";
 
 export type Project = {
   id: Key;
@@ -12,44 +12,54 @@ export type Project = {
 };
 
 const projects: Project[] = [
-  //   {
-  //     id: 1,
-  //     title: "tourzApp",
-  //     imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-  //     route: "shop/hats",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "jackets",
-  //     imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-  //     route: "shop/jackets",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "sneakers",
-  //     imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-  //     route: "shop/sneakers",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "womens",
-  //     imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-  //     route: "shop/womens",
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "mens",
-  //     imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-  //     route: "shop/mens",
-  //   },
+  {
+    id: 1,
+    title: "clothing-store",
+    imageUrl: "",
+    description:
+      "A clothing store web project which I built in my React learning journey",
+    links: [
+      "https://clothingstoreguizo.netlify.app/",
+      "https://github.com/guizo792/clothing-store",
+    ],
+  },
+  {
+    id: 2,
+    title: "tourzApp",
+    imageUrl: "",
+    description:
+      "A web app that shows available tours details and offers booking one",
+    links: [
+      "https://tourzapp.herokuapp.com/",
+      "https://github.com/guizo792/tourzApp",
+    ],
+  },
+  {
+    id: 3,
+    title: "CRM App",
+    imageUrl: "",
+    description: "A classroom management and reservation application",
+    links: ["", "https://github.com/guizo792/CRM-App"],
+  },
+  {
+    id: 4,
+    title: "products manager",
+    imageUrl: "",
+    description:
+      "A web application to manage(add, delete, update, get) products",
+    links: ["", "https://github.com/guizo792/products_manager"],
+  },
 ];
 
 const ProjectsSection = () => {
   return (
-    <div className="directory-container">
-      {projects.map((project) => (
-        <ProjectsSectionItem key={project.id} project={project} />
-      ))}
+    <div className="projects-section-container">
+      <h1 className="section-title">Projects</h1>
+      <div className="projects-container">
+        {projects.map((project) => (
+          <ProjectsSectionItem key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };
