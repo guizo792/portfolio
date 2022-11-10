@@ -6,7 +6,6 @@ import "./projects-section.styles.scss";
 export type Project = {
   id: Key;
   title: string;
-  imageUrl: string;
   description: string;
   links: string[];
 };
@@ -15,7 +14,6 @@ const projects: Project[] = [
   {
     id: 1,
     title: "clothing-store",
-    imageUrl: "",
     description:
       "A clothing store web project which I built in my React learning journey",
     links: [
@@ -26,7 +24,6 @@ const projects: Project[] = [
   {
     id: 2,
     title: "tourzApp",
-    imageUrl: "",
     description:
       "A web app that shows available tours details and offers booking one",
     links: [
@@ -37,17 +34,21 @@ const projects: Project[] = [
   {
     id: 3,
     title: "CRM App",
-    imageUrl: "",
     description: "A classroom management and reservation application",
     links: ["", "https://github.com/guizo792/CRM-App"],
   },
   {
     id: 4,
     title: "products manager",
-    imageUrl: "",
     description:
       "A web application to manage(add, delete, update, get) products",
     links: ["", "https://github.com/guizo792/products_manager"],
+  },
+  {
+    id: 5,
+    title: "my portfolio",
+    description: "My portfolio where I listed details about me",
+    links: ["", "https://github.com/guizo792/portfolio"],
   },
 ];
 

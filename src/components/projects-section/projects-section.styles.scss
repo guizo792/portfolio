@@ -1,8 +1,13 @@
 .projects-section-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  // gap: 0.2rem;
-  // padding: 170px 40px 0;
+  gap: 7rem;
+  padding: 170px 40px 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
 }
