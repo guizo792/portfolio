@@ -6,9 +6,8 @@
 
   .education-section-title {
     text-align: center;
-    color: #1d1d1d;
+    // color: #1d1d1d;
     padding-top: 2rem;
-    font-size: 6rem;
   }
 
   .education-item-container {
@@ -48,6 +47,7 @@
         grid-row-start: span 1;
         -ms-grid-row-span: 1;
         grid-row-end: span 1;
+        text-align: center;
       }
 
       .details-side {
