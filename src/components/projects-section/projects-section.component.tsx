@@ -8,6 +8,7 @@ export type Project = {
   title: string;
   description: string;
   links: string[];
+  usedTechnologies: string;
 };
 
 const projects: Project[] = [
@@ -20,6 +21,8 @@ const projects: Project[] = [
       "https://clothingstoreguizo.netlify.app/",
       "https://github.com/guizo792/clothing-store",
     ],
+    usedTechnologies:
+      "typeScript | javaScript | reactJs | redux | sass | firebase",
   },
   {
     id: 2,
@@ -30,12 +33,15 @@ const projects: Project[] = [
       "https://tourzapp.herokuapp.com/",
       "https://github.com/guizo792/tourzApp",
     ],
+    usedTechnologies:
+      "javaScript | nodeJs | mongoDB | mongoose| restAPI | html | css | pug",
   },
   {
     id: 3,
     title: "CRM App",
     description: "A classroom management and reservation application",
     links: ["", "https://github.com/guizo792/CRM-App"],
+    usedTechnologies: "javascript | html | css | mysql | jwt",
   },
   {
     id: 4,
@@ -43,12 +49,14 @@ const projects: Project[] = [
     description:
       "A web application to manage(add, delete, update, get) products",
     links: ["", "https://github.com/guizo792/products_manager"],
+    usedTechnologies: "java | servlet | jsp | jstl | bootstrap | tomcat",
   },
   {
     id: 5,
     title: "my portfolio",
     description: "My portfolio where I listed details about me",
     links: ["", "https://github.com/guizo792/portfolio"],
+    usedTechnologies: "typeScript | javaScript | reactJs | sass",
   },
 ];
 

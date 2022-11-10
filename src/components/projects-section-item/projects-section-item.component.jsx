@@ -6,8 +6,7 @@ import {
   Title,
   Description,
   Links,
-  LinkItem,
-  LinkItemContainer,
+  UsedTechnologies,
 } from "./projects-section-item.styles";
 
 // type ProjectProps = {
@@ -15,7 +14,7 @@ import {
 // };
 
 const ProjectsSectionItem = ({ project }) => {
-  const { title, description, links } = project;
+  const { title, description, links, usedTechnologies } = project;
 
   return (
     <ProjectSectionItemContainer>
@@ -36,6 +35,10 @@ const ProjectsSectionItem = ({ project }) => {
           <FontAwesomeIcon icon={brands("chrome")} />
         </a>
       </Links>
+      <UsedTechnologies>
+        <span>stack: </span>
+        {usedTechnologies}
+      </UsedTechnologies>
     </ProjectSectionItemContainer>
   );
 };

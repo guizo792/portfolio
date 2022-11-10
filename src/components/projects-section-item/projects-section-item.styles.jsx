@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // export const BackgroundImage = styled.div`
@@ -9,16 +8,14 @@ import styled from "styled-components";
 //   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 // `;
 
-export const LinkItemContainer = styled(Link)``;
-
 export const ProjectSectionItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  height: 260px;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid #fff;
   border-radius: 3px;
   margin: 0 7.5px 15px;
@@ -146,4 +143,7 @@ export const Links = styled.div`
   }
 `;
 
-// export const LinkItemContainer = styled(Link)``;
+export const UsedTechnologies = styled.div`
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+`;
