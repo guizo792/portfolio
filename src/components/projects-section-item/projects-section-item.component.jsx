@@ -36,8 +36,7 @@ const ProjectsSectionItem = ({ project }) => {
         </a>
       </Links>
       <UsedTechnologies>
-        <span>stack: </span>
-        {usedTechnologies}
+        <span>stack</span>:{" " + usedTechnologies}
       </UsedTechnologies>
     </ProjectSectionItemContainer>
   );

@@ -6,7 +6,6 @@ import Button from "src/components/button/button.component";
 import {
   NavigationContainer,
   NavLinksContainer,
-  NavLinkContainer,
   LogoContainer,
 } from "./navigation.styles";
 
@@ -16,12 +15,11 @@ const Navigation = () => {
       <NavigationContainer>
         <LogoContainer to="/">GUIZOUL</LogoContainer>
         <NavLinksContainer>
-          <NavLinkContainer to="/">Home</NavLinkContainer>
-          <NavLinkContainer to="/">About</NavLinkContainer>
-          <NavLinkContainer to="/">Education</NavLinkContainer>
-          <NavLinkContainer to="/">Projects</NavLinkContainer>
-          <NavLinkContainer to="/">Experience</NavLinkContainer>
-          <NavLinkContainer to="/">Blog</NavLinkContainer>
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#education">Education</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#experience">Experience</a>
         </NavLinksContainer>
         <Button>Contact Me</Button>
       </NavigationContainer>

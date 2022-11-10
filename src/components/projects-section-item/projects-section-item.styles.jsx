@@ -8,6 +8,16 @@ import styled from "styled-components";
 //   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 // `;
 
+export const UsedTechnologies = styled.div`
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+
+  span {
+    font-size: 1.8rem;
+    text-decoration: underline;
+  }
+`;
+
 export const ProjectSectionItemContainer = styled.div`
   min-width: 30%;
   height: 260px;
@@ -88,6 +98,10 @@ export const ProjectSectionItemContainer = styled.div`
         }
       }
     }
+
+    ${UsedTechnologies} span {
+      color: #ddd;
+    }
   }
 `;
 
@@ -98,8 +112,8 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
-  background-color: white;
+  border: 1px solid #cea7ff77;
+  background-color: #cea7ff77;
   opacity: 0.9;
   // position: absolute;
   border-radius: 4px;
@@ -143,7 +157,12 @@ export const Links = styled.div`
   }
 `;
 
-export const UsedTechnologies = styled.div`
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
-`;
+// export const UsedTechnologies = styled.div`
+//   font-size: 1.7rem;
+//   letter-spacing: 0.1rem;
+
+//   span {
+//     font-size: 1.8rem;
+//     text-decoration: underline;
+//   }
+// `;

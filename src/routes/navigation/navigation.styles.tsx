@@ -75,38 +75,38 @@ export const NavLinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   list-style: none;
-`;
 
-export const NavLinkContainer = styled(Link)`
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  letter-spacing: 1.2px;
-  font-size: 1.8rem;
-  color: #641aa5;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-size: 1.8rem;
+    color: #641aa5;
 
-  // position: absolute;
+    // position: absolute;
 
-  &::after {
-    content: "";
-    width: 0px;
-    height: 0.1rem;
-    display: block;
-    background: #9a2ff8;
-    transition: 300ms;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    &::after {
+      content: "";
+      width: 0px;
+      height: 0.1rem;
+      display: block;
+      background: #9a2ff8;
+      transition: 300ms;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  &:hover {
-    color: #9a2ff8;
-    box-shadow: 0 5px 7px -3px #9a2ff898;
+    &:hover {
+      color: #9a2ff8;
+      box-shadow: 0 5px 7px -3px #9a2ff898;
 
-    &:after {
-      width: 100%;
+      &:after {
+        width: 100%;
+      }
     }
   }
 `;
