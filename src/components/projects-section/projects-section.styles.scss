@@ -4,7 +4,13 @@
   justify-content: flex-start;
   align-items: center;
   gap: 7rem;
-  padding: 170px 40px 0;
+  padding: 1px 4rem 17rem 0;
+
+  .section-title {
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 6rem;
+  }
 }
 
 .projects-container {

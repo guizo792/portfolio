@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 import {
   ProjectSectionItemContainer,
@@ -6,8 +7,8 @@ import {
   Description,
   Links,
   LinkItem,
+  LinkItemContainer,
 } from "./projects-section-item.styles";
-import { FaGithub } from "react-icons/fa";
 
 // type ProjectProps = {
 //   project: Project;
@@ -25,14 +26,15 @@ const ProjectsSectionItem = ({ project }) => {
         <p>{description}</p>
       </Description>
       <Links>
-        <LinkItem>
+        <a target="_blank" rel="noreferrer" href={links[1]}>
           <span>github repo</span>
-          <FontAwesomeIcon icon="fa-brands fa-square-github" />
-        </LinkItem>
-        <LinkItem>
+          <FontAwesomeIcon icon={brands("github")} />
+        </a>
+
+        <a target="_blank" rel="noreferrer" href={links[0]}>
           <span>live version</span>
-          <FontAwesomeIcon icon="fa-solid fa-browser" />
-        </LinkItem>
+          <FontAwesomeIcon icon={brands("chrome")} />
+        </a>
       </Links>
     </ProjectSectionItemContainer>
   );

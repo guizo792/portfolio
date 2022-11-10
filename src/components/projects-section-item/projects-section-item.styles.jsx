@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // export const BackgroundImage = styled.div`
@@ -7,6 +8,8 @@ import styled from "styled-components";
 //   background-position: center;
 //   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 // `;
+
+export const LinkItemContainer = styled(Link)``;
 
 export const ProjectSectionItemContainer = styled.div`
   min-width: 30%;
@@ -31,6 +34,11 @@ export const ProjectSectionItemContainer = styled.div`
     margin-left: 7.5px;
   }
 
+  div {
+    color: #7a2cbf;
+    transition: all 0.4s;
+  }
+
   --c: #7a2cbf; /* the color */
   --b: 0.1em; /* border length*/
   --d: 20px; /* the cube depth */
@@ -48,28 +56,41 @@ export const ProjectSectionItemContainer = styled.div`
       border-box,
     conic-gradient(at left var(--_s) bottom var(--_s), #0000 90deg, var(--c) 0)
       0 100% / calc(100% - var(--b)) calc(100% - var(--b)) border-box;
+
+  background-color: #7a2cbf66;
+
   clip-path: polygon(
-    var(--d) 0%,
+    0% var(--d),
     var(--d) 0%,
     100% 0%,
     100% calc(100% - var(--d)),
-    100% calc(100% - var(--d)),
-    var(--d) calc(100% - var(--d))
+    calc(100% - var(--d)) 100%,
+    0% 100%
   );
-
-  background-color: #7a2cbf66;
 
   &:hover {
     background-color: #7a2cbf88;
 
     clip-path: polygon(
-      0% var(--d),
+      var(--d) 0%,
       var(--d) 0%,
       100% 0%,
       100% calc(100% - var(--d)),
-      calc(100% - var(--d)) 100%,
-      0% 100%
+      100% calc(100% - var(--d)),
+      var(--d) calc(100% - var(--d))
     );
+
+    div {
+      color: #260149;
+
+      a {
+        color: #ffcf70;
+
+        &:hover {
+          color: #ff1;
+        }
+      }
+    }
   }
 `;
 
@@ -110,14 +131,19 @@ export const Description = styled.div`
 export const Links = styled.div`
   color: #260149;
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
   align-items: center;
   justify-content: center;
+  letter-spacing: 1.75px;
+
+  a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 `;
 
-export const LinkItem = styled.div`
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-`;
+// export const LinkItemContainer = styled(Link)``;
