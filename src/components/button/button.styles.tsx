@@ -21,6 +21,17 @@ export const BaseButton = styled.button`
   z-index: 1;
   border-radius: 2px;
 
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
   &:after {
     content: "";
     position: absolute;

@@ -28,6 +28,12 @@ export const ContactContainer = styled.div`
 
     &:focus {
       outline: none;
+
+      background-color: #7b2cbf;
+    }
+
+    &::placeholder {
+      color: #ddd;
     }
   }
 `;

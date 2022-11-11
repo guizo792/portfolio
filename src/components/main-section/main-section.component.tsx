@@ -8,6 +8,7 @@ import ExperiencesSection from "../experiences-section/experiences-section.compo
 import ContactSection from "../contact-section/contact-section.component";
 
 import { MainContainer } from "./main-section.styles";
+import CopyrightSection from "../copyrights-section/copyrights-section.component";
 
 export const MainSection = () => {
   return (
@@ -19,6 +20,7 @@ export const MainSection = () => {
         <ProjectsSection />
         <ExperiencesSection />
         <ContactSection />
+        <CopyrightSection />
       </MainContainer>
     </Fragment>
   );

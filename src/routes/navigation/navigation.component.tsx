@@ -21,7 +21,9 @@ const Navigation = () => {
           <a href="/#projects">Projects</a>
           <a href="/#experience">Experience</a>
         </NavLinksContainer>
-        <Button>Contact Me</Button>
+        <Button>
+          <a href="/#contacts">Contact Me</a>
+        </Button>
       </NavigationContainer>
       <Outlet />
     </Fragment>

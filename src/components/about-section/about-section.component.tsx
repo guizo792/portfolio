@@ -16,7 +16,7 @@ const AboutSection = () => {
         <p className="about-section-item">🟣 Always looking to learn more.</p>
       </div>
       <Button className="about-section-btn">
-        <span>Let's Get In Touch</span> →
+        <a href="/#contacts">Let's Get In Touch</a> →
       </Button>
     </div>
   );

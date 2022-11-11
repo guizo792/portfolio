@@ -41,6 +41,7 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
+    background-color: #7b2cbf;
   }
 
   &:focus ~ ${FormInputLabel} {
