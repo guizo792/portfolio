@@ -15,7 +15,7 @@ const Navigation = () => {
       <NavigationContainer>
         <LogoContainer to="/">GUIZOUL</LogoContainer>
         <NavLinksContainer>
-          <a href="/">Home</a>
+          <a>Home</a>
           <a href="/#about">About</a>
           <a href="/#education">Education</a>
           <a href="/#projects">Projects</a>
