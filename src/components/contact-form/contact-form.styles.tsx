@@ -25,6 +25,7 @@ export const ContactContainer = styled.div`
     border-radius: 3px;
     border-bottom: 1px solid #ddd;
     margin: 25px 0;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
