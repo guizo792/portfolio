@@ -38,7 +38,7 @@ export const Input = styled.input`
   border-radius: 3px;
   border-bottom: 1px solid ${sublColor};
   margin: 25px 0;
-
+  padding-left: 1rem;
   &:focus {
     outline: none;
     background-color: #7b2cbf;

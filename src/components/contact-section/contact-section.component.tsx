@@ -10,6 +10,7 @@ import ContactForm from "../contact-form/contact-form.component";
 export const personalAccounts = {
   linkedin: "https://www.linkedin.com/in/abdellah-guizoul-0878b823a/",
   gmail: "guizoulabdellah792@gmail.com",
+  github: "https://www.github.com/guizo792",
 };
 
 const ContactSection = () => {
@@ -30,6 +31,11 @@ const ContactSection = () => {
           >
             <span>Gmail account</span>
             <FontAwesomeIcon icon={solid("envelope")} />
+          </a>
+
+          <a target="_blank" rel="noreferrer" href={personalAccounts.github}>
+            <span>Github account</span>
+            <FontAwesomeIcon icon={brands("github")} />
           </a>
         </Contacts>
         <ContactForm />
