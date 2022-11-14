@@ -1,4 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 import { Outlet } from "react-router-dom";
 
 import Button from "src/components/button/button.component";
@@ -10,11 +12,24 @@ import {
 } from "./navigation.styles";
 
 const Navigation = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">GUIZOUL</LogoContainer>
-        <NavLinksContainer>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <FontAwesomeIcon icon={solid("bars")} />
+        </button>
+        <NavLinksContainer
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
           <a>Home</a>
           <a href="/#about">About</a>
           <a href="/#education">Education</a>
