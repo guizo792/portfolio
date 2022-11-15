@@ -39,6 +39,20 @@ body {
   background: url("../public//images/crystal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 540px) {
+    padding: 1.4rem 0;
+
+    .section {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 494px) {
+    .section {
+      max-width: 320px;
+    }
+  }
 }
 
 #root {
@@ -48,6 +62,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
+
+  @media screen and (max-width: 740px) {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 code {
@@ -106,6 +128,19 @@ code {
   font-weight: normal;
   letter-spacing: 1.6rem;
   color: #3c096c;
+
+  @media screen and (max-width: 1090px) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: 740px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 506px) {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
 }
 
 .alert {

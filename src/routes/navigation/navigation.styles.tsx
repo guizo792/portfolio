@@ -14,16 +14,13 @@ export const NavigationContainer = styled.div`
     height: 40px;
     width: 40px;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 2px;
     background-color: #9a2ff8;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s;
     // positions the icon to the right and center aligns it vertically
-    position: absolute;
-    top: 0.55%;
-    right: 5%;
-    transform: translateY(-50%);
+
     display: none;
 
     &:hover {
@@ -46,7 +43,8 @@ export const NavigationContainer = styled.div`
       // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
       position: absolute;
       top: 80px;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       // stacks the li tags vertically
       flex-direction: column;
       // makes menu span full height and width
@@ -55,6 +53,7 @@ export const NavigationContainer = styled.div`
       background-color: #ffffffcc;
       border: 1px solid #7b2cbf;
       border-radius: 4px;
+      z-index: 99999;
 
       .nav-button {
         margin: 0 auto;
@@ -144,7 +143,7 @@ export const LogoContainer = styled(Link)`
   @media only screen and (max-width: 600px) {
     /*Big smartphones [426px -> 600px]*/
 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0 1.4rem 0 1.4rem;
     height: 40px;
   }

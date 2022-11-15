@@ -2,7 +2,7 @@
   padding: 2rem 4rem;
   color: rgba(37, 36, 36, 0.555);
   background-color: #b331f011;
-  // backdrop-filter: blur(15px);
+  height: 90%;
 
   .education-section-title {
     text-align: center;
@@ -48,6 +48,16 @@
         -ms-grid-row-span: 1;
         grid-row-end: span 1;
         text-align: center;
+
+        @media screen and (max-width: 900px) {
+          font-size: 7rem;
+        }
+        @media screen and (max-width: 740px) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: 502px) {
+          font-size: 4rem;
+        }
       }
 
       .details-side {
@@ -61,12 +71,32 @@
           margin-bottom: 10px;
           font-size: 4rem;
           line-height: 1.1;
+
+          @media screen and (max-width: 900px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 740px) {
+            font-size: 2.4rem;
+          }
+          @media screen and (max-width: 502px) {
+            font-size: 1.8rem;
+          }
         }
 
         .description {
           margin-bottom: 10px px;
           margin-top: 0;
           font-size: 2rem;
+
+          @media screen and (max-width: 900px) {
+            font-size: 1.6rem;
+          }
+          @media screen and (max-width: 740px) {
+            font-size: 1.4rem;
+          }
+          @media screen and (max-width: 502px) {
+            font-size: 1.2rem;
+          }
         }
       }
     }

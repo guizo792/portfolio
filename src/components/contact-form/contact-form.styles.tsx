@@ -5,6 +5,10 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   width: 380px;
 
+  @media screen and (max-width: 540px) {
+    width: 280px;
+  }
+
   h2 {
     margin: 10px 0;
   }

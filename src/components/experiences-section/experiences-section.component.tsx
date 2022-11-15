@@ -17,7 +17,7 @@ const experiencesDetails: ExperiencesDetails[] = [
 
 const ExperiencesSection = () => {
   return (
-    <div className="education-section-container" id="experience">
+    <div className="education-section-container section" id="experience">
       <h1 className="section-title education-section-title">Experiences</h1>
       {experiencesDetails.map((experience) => (
         <div className="education-item-container" id={experience.year}>

@@ -9,6 +9,10 @@ export const ContactSectionContainer = styled.div`
   padding: 1px 4rem 2rem;
   background-color: #b331f077;
   text-align: center;
+
+  @media screen and (max-width: 540px) {
+    padding: 1px 1rem 1rem;
+  }
 `;
 
 export const ContactsContainer = styled.div`
@@ -35,6 +39,14 @@ export const Contacts = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #ffcf70;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 502px) {
+      font-size: 0.8rem;
+    }
 
     &:hover {
       color: #ff1;

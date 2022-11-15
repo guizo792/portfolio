@@ -13,7 +13,7 @@ import CopyrightSection from "../copyrights-section/copyrights-section.component
 export const MainSection = () => {
   return (
     <Fragment>
-      <MainContainer>
+      <MainContainer className="section">
         <HeroSection />
         <AboutSection />
         <EducationSection />

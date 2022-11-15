@@ -62,7 +62,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <div className="projects-section-container" id="projects">
+    <div className="projects-section-container section" id="projects">
       <h1 className="section-title education-section-title">Projects</h1>
       <div className="projects-container">
         {projects.map((project) => (

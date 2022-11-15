@@ -37,13 +37,52 @@ const Navigation = () => {
           }
         >
           <NavLinksContainer>
-            <a>Home</a>
-            <a href="/#about">About</a>
-            <a href="/#education">Education</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#experience">Experience</a>
+            <a
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Home
+            </a>
+            <a
+              href="/#about"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              About
+            </a>
+            <a
+              href="/#education"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Education
+            </a>
+            <a
+              href="/#projects"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Projects
+            </a>
+            <a
+              href="/#experience"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Experience
+            </a>
           </NavLinksContainer>
-          <Button className="nav-button">
+          <Button
+            className="nav-button"
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
             <a href="/#contacts">Contact Me</a>
           </Button>
         </div>

@@ -15,7 +15,7 @@ export const personalAccounts = {
 
 const ContactSection = () => {
   return (
-    <ContactSectionContainer id="contacts">
+    <ContactSectionContainer className="section" id="contacts">
       <h1 className="section-title education-section-title">Accounts</h1>
       <ContactsContainer>
         <Contacts>

@@ -16,6 +16,13 @@ export const UsedTechnologies = styled.div`
     font-size: 1.8rem;
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.4rem;
+    span {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 export const ProjectSectionItemContainer = styled.div`
@@ -122,14 +129,31 @@ export const Title = styled.div`
   h2 {
     font-weight: bold;
     margin: 0 6px 0;
-    font-size: 22px;
+    font-size: 2.2rem;
     color: #260149;
     text-transform: uppercase;
   }
 
   p {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: 492px) {
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -137,6 +161,14 @@ export const Description = styled.div`
   color: #260149;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 493px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Links = styled.div`
@@ -154,6 +186,10 @@ export const Links = styled.div`
     justify-content: center;
     font-size: 1.8rem;
     cursor: pointer;
+
+    @media screen and (max-width: 552px) {
+      font-size: 1.1rem;
+    }
   }
 `;
 

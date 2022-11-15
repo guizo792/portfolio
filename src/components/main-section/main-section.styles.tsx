@@ -8,4 +8,8 @@ export const MainContainer = styled.div`
 
   display: grid;
   grid-template-rows: 1fr 0.75fr 1fr 1fr;
+
+  @media screen and (max-width: 740px) {
+    padding: 0;
+  }
 `;

@@ -10,9 +10,10 @@ import {
 
 const HeroSection = () => {
   return (
-    <HeroSectionContainer>
+    <HeroSectionContainer className="section">
       <ImageSideContainer>
         <img src={require("../../template.png")} alt="that's me" />
+        <div className="overlay"></div>
       </ImageSideContainer>
       <InfoSideContainer>
         <InfoSideTitle>Hello world!</InfoSideTitle>

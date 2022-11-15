@@ -74,11 +74,4 @@ export const BaseButton = styled.button`
     padding: 0 1.4rem 0 1.4rem;
     height: 30px;
   }
-  @media only screen and (max-width: 425px) {
-    /*Small smartphones [325px -> 425px]*/
-
-    font-size: 1rem;
-    padding: 0 1.2rem 0 1.2rem;
-    height: 20px;
-  }
 `;

@@ -5,7 +5,7 @@ const year = date.getFullYear();
 
 const CopyrightSection = () => {
   return (
-    <CopyrightSectionContainer>
+    <CopyrightSectionContainer className="section">
       Made with 💜 by me &copy;{year} All rights reserved
     </CopyrightSectionContainer>
   );
