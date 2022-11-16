@@ -41,5 +41,15 @@ export const ContactContainer = styled.div`
     &::placeholder {
       color: #ddd;
     }
+
+    @media screen and (max-width: 540px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  input {
+    @media screen and (max-width: 540px) {
+      font-size: 1.4rem;
+    }
   }
 `;

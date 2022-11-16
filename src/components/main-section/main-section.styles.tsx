@@ -12,4 +12,8 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 740px) {
     padding: 0;
   }
+
+  @media screen and (max-width: 540px) {
+    grid-template-rows: 1fr;
+  }
 `;

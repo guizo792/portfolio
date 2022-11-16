@@ -53,12 +53,20 @@ export const InfoSideContainer = styled.div`
   @media screen and (max-width: 1090px) {
     height: 50%;
   }
+
+  @media screen and (max-width: 500px) {
+    gap: 1.6rem;
+  }
 `;
 
 export const InfoSideTitle = styled.h1`
   font-size: 5.3rem;
   letter-spacing: 0.7rem;
   font-weight: bold;
+
+  @media screen and (max-width: 500px) {
+    font-size: 4.2rem;
+  }
 `;
 
 export const InfoSideTitleSecondary = styled.h2`
@@ -81,6 +89,14 @@ export const InfoSideTitleSecondary = styled.h2`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.6rem;
+
+    .name {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -113,5 +129,11 @@ export const Slogan = styled.p`
 
   @media screen and (max-width: 730px) {
     font-size: 4rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 2.8rem;
+    letter-spacing: 1rem;
+    margin-top: 2rem;
   }
 `;

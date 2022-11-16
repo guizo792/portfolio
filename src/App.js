@@ -28,4 +28,8 @@ document.querySelector(".gotop-btn")?.addEventListener("click", () =>
   })
 );
 
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+});
+
 export default App;

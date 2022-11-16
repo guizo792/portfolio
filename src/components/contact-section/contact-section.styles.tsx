@@ -45,7 +45,7 @@ export const Contacts = styled.div`
     }
 
     @media screen and (max-width: 502px) {
-      font-size: 0.8rem;
+      flex-direction: column;
     }
 
     &:hover {
