@@ -1,13 +1,17 @@
-import { Fragment } from "react";
+import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-
-import Navigation from "./routes/navigation/navigation.component";
-import Home from "./routes/home/home.component";
+import Loader from "./components/loader/loader.component";
 
 import "./index.scss";
+
+const Navigation = lazy(() =>
+  import("./routes/navigation/navigation.component")
+);
+const Home = lazy(() => import("./routes/home/home.component"));
+
 function App() {
   return (
-    <Fragment>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
@@ -16,7 +20,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} /> */}
         </Route>
       </Routes>
-    </Fragment>
+    </Suspense>
   );
 }
 
