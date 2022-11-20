@@ -11,7 +11,7 @@ export const LoaderOverlay = styled.div`
 export const LoaderContainer = styled.div`
   display: inline-block;
   width: 70px;
-  height: 20px;
+  height: 70px;
   border: 5px solid rgba(195, 195, 195, 0.6);
   border-radius: 50%;
   border-top-color: #9a2ff888;
