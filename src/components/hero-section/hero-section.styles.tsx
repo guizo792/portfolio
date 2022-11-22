@@ -14,10 +14,11 @@ export const HeroSectionContainer = styled.div`
 export const ImageSideContainer = styled.div`
   position: relative;
   overflow: hidden;
+  border: solid 0.3rem #7b2cbf;
 
   img {
     width: 100%;
-    border: solid 0.3rem #7b2cbf;
+    // border: solid 0.3rem #7b2cbf;
     border-radius: 2px;
   }
 

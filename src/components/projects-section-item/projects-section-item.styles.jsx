@@ -186,6 +186,11 @@ export const Links = styled.div`
     justify-content: center;
     font-size: 1.8rem;
     cursor: pointer;
+    color: #260149;
+
+    span {
+      color: #260149;
+    }
 
     @media screen and (max-width: 552px) {
       font-size: 1.1rem;
