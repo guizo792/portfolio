@@ -188,10 +188,6 @@ export const Links = styled.div`
     cursor: pointer;
     color: #260149;
 
-    span {
-      color: #260149;
-    }
-
     @media screen and (max-width: 552px) {
       font-size: 1.1rem;
     }
