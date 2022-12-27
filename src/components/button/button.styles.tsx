@@ -19,7 +19,9 @@ export const BaseButton = styled.button`
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border-radius: 2px;
+  border-radius: 0.7rem;
+  background-color: #9a2ff8;
+
 
   a {
     text-decoration: none;
@@ -32,32 +34,10 @@ export const BaseButton = styled.button`
     }
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #9a2ff8;
-    z-index: -2;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #7b2cbf;
-    transition: all 0.3s;
-    z-index: -1;
   }
   &:hover {
     color: #fff;
-    &:before {
-      width: 100%;
-    }
+    background-color: #7b2cbf;
   }
 
   @media only screen and (max-width: 1200px) {
