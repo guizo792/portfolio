@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.69fr 0.5fr;
 
-  @media screen and (max-width: 1090px) {
+  @media screen and (max-width: 1581px) {
     display: flex;
     flex-direction: column;
   }
