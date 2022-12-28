@@ -26,7 +26,7 @@ export const ContactContainer = styled.div`
     display: block;
     width: 100%;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.6rem;
     border-bottom: 1px solid #ddd;
     margin: 25px 0;
     transition: all 0.3s;

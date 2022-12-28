@@ -33,8 +33,6 @@ export const ProjectSectionItemContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #fff;
-  border-radius: 3px;
   margin: 0 7.5px 15px;
   overflow: hidden;
   padding: 2rem;
@@ -54,7 +52,7 @@ export const ProjectSectionItemContainer = styled.div`
   }
 
   --c: #7a2cbf; /* the color */
-  --b: 0.1em; /* border length*/
+  --b: 0.2rem; /* border length*/
   --d: 20px; /* the cube depth */
 
   --_s: calc(var(--d) + var(--b));
@@ -123,7 +121,7 @@ export const Title = styled.div`
   background-color: #cea7ff77;
   opacity: 0.9;
   // position: absolute;
-  border-radius: 4px;
+  border-radius: 0.8rem;
   transition: opacity 0.3s;
 
   h2 {
@@ -161,6 +159,7 @@ export const Description = styled.div`
   color: #260149;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 
   @media screen and (max-width: 600px) {
     font-size: 1.6rem;

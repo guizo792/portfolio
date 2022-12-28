@@ -14,12 +14,13 @@ export const HeroSectionContainer = styled.div`
 export const ImageSideContainer = styled.div`
   position: relative;
   overflow: hidden;
-  border: solid 0.3rem #7b2cbf;
+  // border: solid 0.3rem #7b2cbf;
+  // border-radius: .8rem;
 
   img {
     width: 100%;
     // border: solid 0.3rem #7b2cbf;
-    border-radius: 2px;
+    border-radius: 0.8rem;
   }
 
   .overlay {
@@ -33,6 +34,7 @@ export const ImageSideContainer = styled.div`
     // opacity: 0;
     transition: 0.6s ease;
     background-color: #7b2cbf88;
+    border-radius: 0.8rem;
 
     &:hover {
       opacity: 0;
@@ -49,7 +51,7 @@ export const InfoSideContainer = styled.div`
   align-items: flex-start;
   gap: 4rem;
   border: solid 0.3rem #7b2cbf;
-  border-radius: 2px;
+  border-radius: 0.8rem;
 
   @media screen and (max-width: 1090px) {
     height: 50%;
@@ -86,7 +88,7 @@ export const InfoSideTitleSecondary = styled.h2`
     color: #fff;
     background: #5b0f9e;
     box-shadow: 0 0 10px #7b2cbf, 0 0 20px #7b2cbf, 0 0 30px #7b2cbf;
-    border-radius: 0.3rem;
+    border-radius: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
