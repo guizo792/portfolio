@@ -20,7 +20,7 @@ const ContactSection = () => {
       <ContactsContainer>
         <Contacts>
           <a target="_blank" rel="noreferrer" href={personalAccounts.linkedin}>
-            <span>Linkedin account</span>
+            <span>Linkedin</span>
             <FontAwesomeIcon icon={brands("linkedin")} />
           </a>
 
@@ -29,12 +29,12 @@ const ContactSection = () => {
             rel="noreferrer"
             href={"mailto:" + personalAccounts.gmail}
           >
-            <span>Gmail account</span>
+            <span>Gmail</span>
             <FontAwesomeIcon icon={solid("envelope")} />
           </a>
 
           <a target="_blank" rel="noreferrer" href={personalAccounts.github}>
-            <span>Github account</span>
+            <span>Github</span>
             <FontAwesomeIcon icon={brands("github")} />
           </a>
         </Contacts>

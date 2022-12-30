@@ -26,6 +26,18 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "patients-manager",
+    description:
+      "A web app that manages patients (CRUD ops) by the admins and listing them for users",
+    links: [
+      "https://patients-manager.up.railway.app/",
+      "https://github.com/guizo792/patients-manager",
+    ],
+    usedTechnologies:
+      "java | mysql | spring boot | spring security | thymeleaf | bootstrap",
+  },
+  {
+    id: 3,
     title: "tourzApp",
     description:
       "A web app that shows available tours details and offers booking one",
@@ -37,14 +49,14 @@ const projects: Project[] = [
       "javaScript | nodeJs | mongoDB | mongoose| restAPI | html | css | pug",
   },
   {
-    id: 3,
+    id: 4,
     title: "CRM App",
     description: "A classroom management and reservation application",
     links: ["", "https://github.com/guizo792/CRM-App"],
     usedTechnologies: "javascript | html | css | mysql | jwt",
   },
   {
-    id: 4,
+    id: 5,
     title: "products manager",
     description:
       "A web application to manage(add, delete, update, get) products",
@@ -52,7 +64,7 @@ const projects: Project[] = [
     usedTechnologies: "java | servlet | jsp | jstl | bootstrap | tomcat",
   },
   {
-    id: 5,
+    id: 6,
     title: "my portfolio",
     description: "My portfolio where I listed details about me",
     links: ["", "https://github.com/guizo792/portfolio"],
